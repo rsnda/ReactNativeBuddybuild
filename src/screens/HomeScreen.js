@@ -48,6 +48,10 @@ export default class HomeScreen extends Component {
     this.navigate(STATE_SCENE_NAME);
   }
 
+  alertMessage() {
+    alert('Au choix');
+  }
+
   render() {
     return (
       <ScrollView>
@@ -69,6 +73,12 @@ export default class HomeScreen extends Component {
           <Button
             onPress={this.navigateToState}
             title="State"
+          />
+        </View>
+        <View style={styles.margin}>
+          <Button
+            onPress={this.alertMessage}
+            title="Alert"
           />
         </View>
       </ScrollView>
